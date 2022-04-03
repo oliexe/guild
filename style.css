@@ -1,0 +1,188 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.bg1{
+  position: absolute;
+  height: 100vh;
+  top:0;
+  left: -200px;
+  overflow: hidden;
+  opacity: 0.5;
+}
+
+body {
+  background-color: #000000;
+  color: #ffffff;
+  overflow: hidden;
+}
+
+ul {
+  overflow: hidden;
+  perspective: 900px;
+  list-style: none;
+  height: 100vh;
+  /* max-height: 800px; */
+  /* min-height: 700px; */
+  text-align: center;
+}
+
+@keyframes width-sway {
+  0%, 100% {
+    width: 500px;
+  }
+  50% {
+    width: 100%;
+  }
+}
+li {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  transform: translateY(100vh);
+  font-size: 2rem;
+  font-family: sans-serif;
+  font-weight: bold;
+  animation: 30s spiral-staircase linear infinite;
+}
+
+li:nth-child(1) {
+  animation-delay: 0s;
+}
+
+li:nth-child(2) {
+  animation-delay: 1s;
+}
+
+li:nth-child(3) {
+  animation-delay: 2s;
+}
+
+li:nth-child(4) {
+  animation-delay: 3s;
+}
+
+li:nth-child(5) {
+  animation-delay: 4s;
+}
+
+li:nth-child(6) {
+  animation-delay: 5s;
+}
+
+li:nth-child(7) {
+  animation-delay: 6s;
+}
+
+li:nth-child(8) {
+  animation-delay: 7s;
+}
+
+li:nth-child(9) {
+  animation-delay: 8s;
+}
+
+li:nth-child(10) {
+  animation-delay: 9s;
+}
+
+li:nth-child(11) {
+  animation-delay: 10s;
+}
+
+li:nth-child(12) {
+  animation-delay: 11s;
+}
+
+li:nth-child(13) {
+  animation-delay: 12s;
+}
+
+li:nth-child(14) {
+  animation-delay: 13s;
+}
+
+li:nth-child(15) {
+  animation-delay: 14s;
+}
+
+li:nth-child(16) {
+  animation-delay: 15s;
+}
+
+li:nth-child(1) {
+  right: 1rem;
+}
+
+li:nth-last-child(1) {
+  right: 1rem;
+}
+
+li:nth-child(2) {
+  right: 2rem;
+}
+
+li:nth-last-child(2) {
+  right: 2rem;
+}
+
+li:nth-child(3) {
+  right: 3rem;
+}
+
+li:nth-last-child(3) {
+  right: 3rem;
+}
+
+li:nth-child(4) {
+  right: 4rem;
+}
+
+li:nth-last-child(4) {
+  right: 4rem;
+}
+
+li:nth-child(5) {
+  right: 5rem;
+}
+
+li:nth-last-child(5) {
+  right: 5rem;
+}
+
+li:nth-child(6) {
+  right: 6rem;
+}
+
+li:nth-last-child(6) {
+  right: 6rem;
+}
+
+li:nth-child(7) {
+  right: 7rem;
+}
+
+li:nth-last-child(7) {
+  right: 7rem;
+}
+
+li:nth-child(8) {
+  right: 8rem;
+}
+
+li:nth-last-child(8) {
+  right: 8rem;
+}
+
+
+@keyframes spiral-staircase {
+	0% {
+		transform: rotateY(90deg) translateY(120vh) rotate(10deg)
+	}
+	to {
+		transform: rotateY(-390deg) translateY(-290vh) rotate(10deg)
+	}
+}
