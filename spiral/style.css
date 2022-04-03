@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap");
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  perspective: 52vw;
+  background: black;
+  font-family: "DM Serif Display", serif;
+}
+
+main {
+  display: none;
+  --duration: 186400ms;
+  position: relative;
+  transform-style: preserve-3d;
+}
+main .spiral-text {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 6vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: spiral var(--duration) infinite reverse ease-out both;
+  will-change: transform;
+}
+main .circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-46%, -50%);
+  background-color: black;
+  border-radius: 50%;
+}
+main .KV-text {
+  position: absolute;
+  text-align: center;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  letter-spacing: 0.2em;
+  font-size: 4vw;
+  margin-left: -13.5vw;
+  opacity: 0;
+}
+main .KV-text .sub-text {
+  font-size: 1vw;
+  letter-spacing: 0.1em;
+  white-space: nowrap;
+  margin-top: 1vw;
+  line-height: 1.8;
+}
+
+@keyframes spiral {
+  0%, 1% {
+    transform: translateZ(-200vw) rotateZ(0deg) translateX(0vw) rotateY(0deg) rotateX(0deg);
+    opacity: 0;
+  }
+  100% {
+    transform: translateZ(0) rotateZ(2970deg) translateX(60vw) rotateY(8080deg) rotateX(12160deg);
+  }
+}
