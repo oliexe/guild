@@ -17,6 +17,7 @@ body {
   background-color: #000000;
   color: #ffffff;
   overflow: hidden;
+  font-family: 'Cormorant Garamond', serif;
 }
 
 ul {
@@ -44,8 +45,7 @@ li {
   height: 100%;
   transform: translateY(100vh);
   font-size: 2rem;
-  font-family: sans-serif;
-  font-weight: bold;
+  font-family: 'Cormorant Garamond', serif;
   animation: 30s spiral-staircase linear infinite;
 }
 
